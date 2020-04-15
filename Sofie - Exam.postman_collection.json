@@ -1,0 +1,498 @@
+{
+	"info": {
+		"_postman_id": "a9ce649d-9532-4b75-b28e-674397fb6347",
+		"name": "Sofie - Exam",
+		"description": "# Teste de Android Developer Sofie\n\nEste teste é apresentado aos candidatos as vagas de Android Developer para avaliar os quesitos técnicos.\n\n[API Sofie](https://github.com/my-sofie/teste-android)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01 - Listagem de tarefas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{aws_api_gateway}}/task",
+					"host": [
+						"{{aws_api_gateway}}"
+					],
+					"path": [
+						"task"
+					]
+				},
+				"description": "Recupera a listagem ou a informação de uma tarefa específica"
+			},
+			"response": [
+				{
+					"name": "Recupera uma tarefa específica",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{aws_api_gateway}}/task/372efad7-9c69-4753-bf9b-ee7741aaed0c",
+							"host": [
+								"{{aws_api_gateway}}"
+							],
+							"path": [
+								"task",
+								"372efad7-9c69-4753-bf9b-ee7741aaed0c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 15:59:50 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "342"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "5e1aa07a-73d5-433d-9f28-324e2d47cbe7"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "LCRaWEgpmjQFhlQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5e972f75-a2f6af943a3c1d165268d3ee;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"372efad7-9c69-4753-bf9b-ee7741aaed0c\",\n    \"description\": \"lorem ipsum\",\n    \"email\": \"sofie@sofie.com\",\n    \"when\": \"2020-04-15T15:41:49.074693\",\n    \"title\": \"tarefa 3\"\n}"
+				},
+				{
+					"name": "Listagem de tarefas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{aws_api_gateway}}/task",
+							"host": [
+								"{{aws_api_gateway}}"
+							],
+							"path": [
+								"task"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 15:59:50 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "342"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "5e1aa07a-73d5-433d-9f28-324e2d47cbe7"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "LCRaWEgpmjQFhlQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5e972f75-a2f6af943a3c1d165268d3ee;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"_id\": \"372efad7-9c69-4753-bf9b-ee7741aaed0c\",\n            \"description\": \"lorem ipsum\",\n            \"email\": \"sofie@sofie.com\",\n            \"when\": \"2020-04-15T15:41:49.074693\",\n            \"title\": \"tarefa 3\"\n        },\n        {\n            \"_id\": \"15893f63-17b4-4ef3-bc69-019fda35c339\",\n            \"description\": \"lorem ipsum\",\n            \"email\": \"sofie@sofie.com\",\n            \"when\": \"2020-04-15T15:39:19.126486\",\n            \"title\": \"tarefa 2\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Listagem de tarefas filtrada por um email",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{aws_api_gateway}}/task?email=sofie@mysofie.com",
+							"host": [
+								"{{aws_api_gateway}}"
+							],
+							"path": [
+								"task"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "sofie@mysofie.com"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 19:28:24 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "178"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "f6cd2c91-895b-474d-904b-8cbc5d3b7120"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "LCv9vHcJGjQFXlQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5e976057-0d90efc0d70c11e0ae5dad80;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"_id\": \"adf0f707-b6c7-4167-be34-83a73950d36e\",\n            \"description\": \"lorem ipsum\",\n            \"email\": \"sofie@mysofie.com\",\n            \"when\": \"2020-04-15T19:14:39.094560\",\n            \"title\": \"tarefa 4\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "02 - Incremento de uma tarefa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"tarefa 3\",\n  \"email\": \"sofie@sofie.com\",\n  \"description\": \"lorem ipsum\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aws_api_gateway}}/task",
+					"host": [
+						"{{aws_api_gateway}}"
+					],
+					"path": [
+						"task"
+					]
+				},
+				"description": "Envia dados de uma tarefa para o servidor"
+			},
+			"response": [
+				{
+					"name": "Incremento de uma tarefa",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"tarefa 3\",\n  \"email\": \"sofie@sofie.com\",\n  \"description\": \"lorem ipsum\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{aws_api_gateway}}/task",
+							"host": [
+								"{{aws_api_gateway}}"
+							],
+							"path": [
+								"task"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 15 Apr 2020 15:41:49 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "191"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-amzn-RequestId",
+							"value": "cb5da9ba-90f8-4df3-aeea-2d72ab6526e6"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "x-amz-apigw-id",
+							"value": "LCOxjEMDGjQFWfQ="
+						},
+						{
+							"key": "X-Amzn-Trace-Id",
+							"value": "Root=1-5e972b3d-d0e920ccad203ece4115b92e;Sampled=0"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"title\": \"tarefa 3\",\n        \"email\": \"sofie@sofie.com\",\n        \"description\": \"lorem ipsum\",\n        \"_id\": \"372efad7-9c69-4753-bf9b-ee7741aaed0c\",\n        \"when\": \"2020-04-15T15:41:49.074693\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "03 - Alteração de uma tarefa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"tarefa 3\",\n  \"email\": \"sofie@mysofie.com\",\n  \"description\": \"lorem ipsum\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aws_api_gateway}}/task/372efad7-9c69-4753-bf9b-ee7741aaed0c",
+					"host": [
+						"{{aws_api_gateway}}"
+					],
+					"path": [
+						"task",
+						"372efad7-9c69-4753-bf9b-ee7741aaed0c"
+					]
+				},
+				"description": "Altera dados de uma tarefa específica"
+			},
+			"response": [
+				{
+					"name": "Alteração de uma tarefa específica",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"tarefa 3\",\n  \"email\": \"sofie@mysofie.com\",\n  \"description\": \"lorem ipsum\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{aws_api_gateway}}/task/372efad7-9c69-4753-bf9b-ee7741aaed0c",
+							"host": [
+								"{{aws_api_gateway}}"
+							],
+							"path": [
+								"task",
+								"372efad7-9c69-4753-bf9b-ee7741aaed0c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"title\": \"tarefa 3\",\n        \"email\": \"sofie@mysofie.com\",\n        \"description\": \"lorem ipsum\",\n        \"_id\": \"372efad7-9c69-4753-bf9b-ee7741aaed0c\",\n        \"when\": \"2020-04-15T15:41:49.074693\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "04 - Alteração de um fragmento da tarefa",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"completed\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{aws_api_gateway}}/task/372efad7-9c69-4753-bf9b-ee7741aaed0c",
+					"host": [
+						"{{aws_api_gateway}}"
+					],
+					"path": [
+						"task",
+						"372efad7-9c69-4753-bf9b-ee7741aaed0c"
+					]
+				},
+				"description": "Atualiza somente o fragmento da tarefa"
+			},
+			"response": [
+				{
+					"name": "Alteração de um fragmento da tarefa",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"completed\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{aws_api_gateway}}/task/372efad7-9c69-4753-bf9b-ee7741aaed0c",
+							"host": [
+								"{{aws_api_gateway}}"
+							],
+							"path": [
+								"task",
+								"372efad7-9c69-4753-bf9b-ee7741aaed0c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"title\": \"tarefa 3\",\n        \"email\": \"sofie@mysofie.com\",\n        \"description\": \"lorem ipsum\",\n        \"_id\": \"372efad7-9c69-4753-bf9b-ee7741aaed0c\",\n        \"when\": \"2020-04-15T15:41:49.074693\",\n        \"completed\": true\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "05 - Remoção da tarefa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{aws_api_gateway}}/task/372efad7-9c69-4753-bf9b-ee7741aaed0c",
+					"host": [
+						"{{aws_api_gateway}}"
+					],
+					"path": [
+						"task",
+						"372efad7-9c69-4753-bf9b-ee7741aaed0c"
+					]
+				},
+				"description": "Remoção da tarefa do servidor"
+			},
+			"response": [
+				{
+					"name": "03 - Alteração de uma tarefa",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"tarefa 3\",\n  \"email\": \"sofie@mysofie.com\",\n  \"description\": \"lorem ipsum\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{aws_api_gateway}}/task/372efad7-9c69-4753-bf9b-ee7741aaed0c",
+							"host": [
+								"{{aws_api_gateway}}"
+							],
+							"path": [
+								"task",
+								"372efad7-9c69-4753-bf9b-ee7741aaed0c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"title\": \"tarefa 3\",\n        \"email\": \"sofie@mysofie.com\",\n        \"description\": \"lorem ipsum\",\n        \"_id\": \"372efad7-9c69-4753-bf9b-ee7741aaed0c\",\n        \"when\": \"2020-04-15T15:41:49.074693\"\n    }\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "9460d681-6ef9-4986-9ea0-42dc2fb484aa",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "1928006e-bd09-4ba1-a83c-b2efe74a739b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "170bd7e9-4362-46cb-bae8-d920188d90ac",
+			"key": "aws_api_gateway",
+			"value": "https://9g1borgfz0.execute-api.sa-east-1.amazonaws.com/beta",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
