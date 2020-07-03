@@ -6,15 +6,15 @@
 
 # Teste de Android Developer Sofie
 
-Seja bem vindo a seleção para a vaga de Android Developer da Sofie
+Seja bem vindo à seleção para a vaga de Android Developer da Sofie
 
-Esse desafio é usado para avaliar os seus quesitos técnicos.
+Este desafio é usado para avaliar os seus quesitos técnicos.
 
 
 
 ### O Desafio
 
-Seu objetivo é criar um app com duas telas, uma que exibe uma listagem de tarefas e outra que adiciona itens nesta listagem de tarefas atráves de uma API.
+Seu objetivo é criar um app com duas telas seguindo o modelo abaixo: uma que exibe uma listagem de tarefas e outra que adiciona itens nesta listagem de tarefas atráves de uma API.
 
 
 
@@ -31,13 +31,13 @@ Seu objetivo é criar um app com duas telas, uma que exibe uma listagem de taref
 
 
 
-Para o desenho das telas, já é suficiente a implementação na orientação vertical (Portrait);
+Apenas a orientação vertical (Portrait) é necessária;
 
-Temos o protótipo no Figma para visualizar melhor os componente: [Developer/Android](https://www.figma.com/file/tj9EOuijFs5JZ3ZNNktLYD/Developer?node-id=0%3A1)
+Temos o protótipo no Figma para visualizar melhor os componentes: [Developer/Android](https://www.figma.com/file/tj9EOuijFs5JZ3ZNNktLYD/Developer?node-id=0%3A1)
 
 
 
-Ao acessar o link acima, clique no botão de comentário, este no formato de balão para visualizar as dicas que foram deixadas em cada componente e deixe selecionado a página Android, conforme a figura abaixo
+Ao acessar o link acima, clique no botão de comentário (formato de balão) para visualizar as dicas que foram deixadas em cada componente e deixe selecionado a página Android, conforme a figura abaixo
 
 ![FigmaTips](https://github.com/my-sofie/teste-android/blob/master/images/FigmaTips.png)
 
@@ -45,17 +45,17 @@ Ao acessar o link acima, clique no botão de comentário, este no formato de bal
 
 ## Consumindo o serviço de tarefas
 
-A API que realiza a listagem e a adição das tarefas se encontra publicado neste link [aqui](https://documenter.getpostman.com/view/11090068/Szf3YpTy?version=latest).
+A API que realiza a listagem e a adição das tarefas se encontra publicada neste link [aqui](https://documenter.getpostman.com/view/11090068/Szf3YpTy?version=latest).
 
 > Dicas: 
 >
-> - Todas as palavras que contém um sublinhado é um hiperlink que ajudará de uma forma seu desenvolvimento deste app.
+> - Todas as palavras que contém um sublinhado são um hiperlink que ajudará de alguma forma seu desenvolvimento deste app.
 >
-> - Neste link acima você encontrar a documentação da api, na **guia language** selecione **Java - [OkHttp](https://square.github.io/okhttp)**  (essa possivelmente deva ser a sua principal biblioteca no app).
+> - Neste link acima você encontrar a documentação da api, na **guia language** selecione **Java - [OkHttp](https://square.github.io/okhttp)**  (essa possivelmente será a sua principal biblioteca no app).
 
 
 
-Abaixo segue algumas informações sobre como utilizar esse serviço.
+Abaixo seguem algumas informações sobre como utilizar esse serviço.
 
 
 
@@ -140,7 +140,7 @@ Adicionar nova tarefa
 ### Pré-requisitos: 
 
  - [Versão mínima do SDK: 16](https://developer.android.com/about/dashboards);
- - [Utilização de bibliotecas de terceiras](https://developer.android.com/studio/build/dependencies?hl=pt-br);
+ - [Utilização de bibliotecas de terceiros](https://developer.android.com/studio/build/dependencies?hl=pt-br);
  - Capricho nos tratamentos e validações dos campos;
  - Tela deve ajustar em devices de resolução pequena, acima de 4 polegadas.
 
@@ -167,15 +167,13 @@ Adicionar nova tarefa
 
 ### Ao terminar o desafio:
 
-- Caso fez o  upload do projeto no Github envie o link para nós por e-mail: developer@mysofie.com com cópia para erik@mysofie.com
+- Caso o upload do projeto for feito no Github, envie o link para nós por e-mail: developer@mysofie.com com cópia para erik@mysofie.com
 
-  
+ 
+- Caso não tenha conta no Github, envie o zip do projeto para developer@mysofie.com com cópia para erik@mysofie.com
 
-- Caso não tenha no Github envie o zip do projeto para developer@mysofie.com com cópia para erik@mysofie.com
 
-  
-
-- Caso tenha vindo direto deste projeto do Github, por favor, preencha o formulário de candidatura neste [link](https://forms.gle/TfyUHkLz5QJ2wb8U8), para que possamos fazer o retorno do contato.
+- Caso tenha vindo direto neste projeto a partir do Github, por favor, preencha o formulário de candidatura neste [link](https://forms.gle/TfyUHkLz5QJ2wb8U8), para que possamos fazer o retorno do contato.
 
 
 
