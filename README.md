@@ -139,7 +139,7 @@ Adicionar nova tarefa
 
 ### Pré-requisitos: 
 
- - [Versão mínima do SDK: 16](https://developer.android.com/about/dashboards);
+ - [Versão mínima do SDK: 19](https://developer.android.com/about/dashboards);
  - [Utilização de bibliotecas de terceiros](https://developer.android.com/studio/build/dependencies?hl=pt-br);
  - Capricho nos tratamentos e validações dos campos;
  - Tela deve ajustar em devices de resolução pequena, acima de 4 polegadas.
